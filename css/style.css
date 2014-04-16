@@ -38,6 +38,7 @@ body {
 }
 
 .ptrnlib-nav,
+.ptrnlib-theme-switch,
 .ptrnlib-view-type {
   float: right;
 }
@@ -50,6 +51,7 @@ body {
   display: inline-block;
 }
 
+.ptrnlib-view-type,
 .ptrnlib-nav {
   margin-left: 20px;
 }
