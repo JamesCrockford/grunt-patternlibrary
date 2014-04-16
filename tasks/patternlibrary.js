@@ -92,7 +92,8 @@ module.exports = function(grunt) {
         title: f.title || options.title,
         stylesheets: f.stylesheets ? options.stylesheets.concat(f.stylesheets) : options.stylesheets,
         javascripts: f.javascripts ? options.javascripts.concat(f.javascripts) : options.javascripts,
-        patterns: patterns
+        patterns: patterns,
+        switchStyles: f.switchStyles
       });
 
       grunt.file.write(f.dest + '/' + indexName, html);

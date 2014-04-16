@@ -9,6 +9,10 @@
     patterns = data;
   });
 
+  function updateTheme( href ){
+      document.querySelector('.ptrnlib-theme').setAttribute('href', href );
+  }
+
   function updateNav(value) {
     document.querySelector('.ptrnlib-nav').value = '#/' + value;
   }
@@ -89,5 +93,9 @@
 
   $('.ptrnlib-view-type').on('change', function() {
     window.location.href = '#/' + currPattern + '/' + this.value;
+  });
+
+  $('.ptrnlib-theme-switch').on('change', function(){
+    updateTheme( $(this).val() );
   });
 })();
